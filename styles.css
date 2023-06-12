@@ -70,7 +70,7 @@
     font-size: 1.8rem; /* 18px */
     font-weight: 400;
     line-height: 1.4;
-    color: var(--main-white);
+    background-color: white;
   }
   
   h1,
@@ -80,7 +80,7 @@
   }
   
   h1 {
-    font-size: 6rem;
+    font-size: 4rem;
   }
   
   h2 {
@@ -120,7 +120,7 @@
     margin-right: 2rem;
   }
   
-  @media (max-width: 28.75em) {
+  @media (max-width: 30.75em) {
     .nav {
       justify-content: center;
     }
@@ -128,6 +128,7 @@
     .nav-list {
       margin: 0 1rem;
     }
+
   }
   
   .nav-list a {
@@ -150,16 +151,17 @@
     width: 100%;
     height: 100vh;
     color: #000;
+    padding: 10px 10px 10px 10px;
   }
   
   .home > p {
     font-size: 1.5rem;
     font-weight: 200;
-    color: var(--main-red);
   }
 
   .profile-description {
     width: 80%;
+    font-size: 1.5rem;
   }
 
   .inline {
@@ -175,10 +177,31 @@
     height: 100px;
   }
 
+  a.anchor {
+    display: block;
+    position: relative;
+    top: -500px;
+    visibility: hidden;
+  }
+
   /* Skills section */
+  .skills > h2 {
+    padding-bottom: 20px;
+  }
+
   .skills > p {
     text-align: center;
     padding-top: 5rem;
+  }
+
+  .progress-bars {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  progress {
+    accent-color: #519c58;
   }
   
   /* Projects section */
@@ -223,7 +246,6 @@
   }
   
   .project {
-    background: var(--main-gray);
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     border-radius: 2px;
   }
@@ -279,29 +301,17 @@
   /* Contact section */
   
   .contact-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-    width: 100%;
-    height: 80vh;
-    padding: 0 2rem;
-    background: var(--main-gray);
   }
-  
-  .contact-section-header > h2 {
-    font-size: 6rem;
+
+  .contact-section-header {
+    padding-top: 30px;
   }
-  
+
   @media (max-width: 28.75em) {
     .contact-section-header > h2 {
       font-size: 4rem;
     }
-  }
-  
-  .contact-section-header > p {
-    font-style: italic;
   }
   
   .contact-links {
@@ -309,7 +319,6 @@
     justify-content: center;
     width: 100%;
     max-width: 980px;
-    margin-top: 4rem;
     flex-wrap: wrap;
   }
   
