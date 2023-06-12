@@ -3,13 +3,11 @@
 
   }
   
-  /* Base reset */
   * {
     margin: 0;
     padding: 0;
   }
   
-  /* box-sizing and font sizing */
   *,
   *::before,
   *::after {
@@ -21,7 +19,6 @@
     font-size: 62.5%;
     scroll-behavior: smooth;
   }
-  
   
   /* 1200px / 16px = 75em */
   @media (max-width: 75em) {
@@ -136,13 +133,13 @@
   }
   
   .home > p {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 200;
   }
 
   .profile-description {
     width: 80%;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .inline {
@@ -158,11 +155,9 @@
     height: 100px;
   }
 
-  a.anchor {
-    display: block;
-    position: relative;
-    top: -500px;
-    visibility: hidden;
+  #home, #skills, #projects {
+    padding-top: 140px;
+    margin-top: -140px;
   }
 
   /* Skills section */
@@ -183,6 +178,10 @@
 
   progress {
     accent-color: #519c58;
+  }
+
+  #skills {
+    padding-bottom: 80px;
   }
   
   /* Projects section */
